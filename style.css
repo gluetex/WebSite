@@ -1,0 +1,355 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+  min-height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body {
+	font-family:'Inter', sans-serif;
+	background-color: 	#FFFFF0;
+  
+}
+
+nav {
+	background-color:antiquewhite;
+	padding: 10px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav .logo a {
+	color: black;
+	font-size: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav .menu {
+
+	display: flex;
+	align-items: center;
+}
+
+nav .menu li {
+	list-style: none;
+	margin-left: 30px;
+}
+
+nav .menu li a:hover {
+	color: Black;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 30px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.left-box {
+	flex-basis: of 60%;
+    padding-right: 30px;
+}
+
+.photo-box {
+    margin-bottom: 30px;
+    }
+    
+    .photo-box img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 30px;
+    }
+    
+    .work-history-box h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    }
+    
+    .work-history-box p {
+    font-size: 30px;
+    line-height: 2;
+    }
+    
+    .right-box {
+    flex-basis: 40%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 30px;
+    }
+    
+    .right-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+    
+    .right-box form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    }
+    
+    .right-box form input,
+    .right-box form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    }
+    
+    .right-box form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    }
+    
+    .right-box form input[type="submit"]:hover {
+    background-color: #666;
+    }
+
+    .footer-box {
+    display: flex;
+    align-items: center;
+    }
+    
+    .footer-box a {
+    display: block;
+    margin-right: 30px;
+    }
+    
+    .footer-box img {
+    width: 30px;
+    height: 30px;
+    }
+    
+    @media screen and (max-width: 768px) {
+    .container {
+    flex-direction: column;
+    }
+
+    .left-box,
+.right-box {
+	flex-basis: 100%;
+}
+
+.right-box {
+	margin-top: 30px;
+}
+
+nav {
+	padding: 10px;
+}
+
+nav .logo a {
+	font-size: 24px;
+}
+
+nav .menu {
+	margin-top: 10px;
+}
+
+nav .menu li {
+	margin-left: 10px;
+}
+
+.right-box form label,
+.right-box form input,
+.right-box form textarea {
+	font-size: 16px;
+}
+
+.right-box form input[type="submit"] {
+	font-size: 16px;
+	padding: 10px 15px;
+}
+
+.footer-box a {
+	margin-right: 20px;
+}
+
+.footer-box img {
+	width: 25px;
+	height: 25px;
+}
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  
+
+.work-history {
+  
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+  
+.contact-box input,
+.contact-box textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+.contact-box button {
+    background-color:antiquewhite;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px;
+  }
+
+  .footer-box img.github {
+    width: 50px;
+    height: 50px;
+  }
+
+  .work-history-box h1, .work-history-box p {
+    color:black;
+    font-style : italic;
+    font-size: 25px;
+    line-height: 0;
+  }
+
+  .contact-box {
+    background-color: antiquewhite;
+    padding: 30px;
+    max-width: 500px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+  }
+
+ .work-history-box h3{
+
+  color:Black
+
+ }
+
+ nav .menu li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.2s ease-in-out;
+}
+
+nav .menu li a:hover {
+  color: #808080;
+  transform: translateY(-2px);
+}
+
+
+#logoPh{
+  width: 200px;
+
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+input[type="submit"] {
+  color: Black;
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px; 
+  background-color:#FFFFF0;
+}
+
+.contact-box form #message {
+  height: 200px;
+  overflow-y: auto;
+}
+
+textarea {
+  height: 150px; 
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.work-info-box{
+margin: 30px;
+line-height: 30px;
+}
+
+.education-box{
+  margin: 30px;
+  line-height: 30px;
+
+}
+
+.seperator{
+
+  margin-top: 5px;
+  line-height: 5px;
+  font-size: 20px;
+
+
+}
+
+body {
+  margin: 0;
+  padding-bottom: 70px; /* height of footer */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: antiquewhite;
+  color: #fff;
+  padding: 20px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
