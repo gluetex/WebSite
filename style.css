@@ -39,6 +39,7 @@ nav .logo a {
 nav .menu {
   display: flex;
   align-items: center;
+  
 }
 
 nav .menu li {
@@ -203,14 +204,16 @@ nav .menu li a:hover {
   text-align: center;
   background-color: #f2f2f2;
 }
-
+.contact-box {
+  z-index: 2;
+}
 .contact-box input,
 .contact-box textarea {
   display: block;
   margin-bottom: 10px;
-  width: 100%;
+  width: 75%;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
 }
 
@@ -337,4 +340,8 @@ footer {
 }
 .ctext {
   margin-bottom: 1.5rem;
+}
+
+#year {
+ margin-left: 64px;
 }
