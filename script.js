@@ -1,16 +1,13 @@
 $(document).ready(function () {
   $("form").submit(function (event) {
-    // prevent the form from submitting with the default action
     event.preventDefault();
 
-    // get the form data
     var formData = {
       name: $("input[name=name]").val(),
       email: $("input[name=email]").val(),
       message: $("textarea[name=message]").val(),
     };
 
-    // send the form data to the server-side script
     $.ajax({
       type: "POST",
       url: "send-mail.php",
@@ -19,7 +16,6 @@ $(document).ready(function () {
       encode: true,
     })
       .done(function (data) {
-        // handle the response from the server-side script
         if (data.success) {
           alert("Your message has been sent. Thank you!");
           $("form")[0].reset();
@@ -34,5 +30,16 @@ $(document).ready(function () {
           "An error occurred while sending your message. Please try again later."
         );
       });
+  });
+});
+
+const menuLinks = document.querySelectorAll(".menu a");
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    const page = href.substr(1);
+    history.pushState({ page }, null, `/${page}`);
   });
 });
