@@ -447,7 +447,7 @@ footer {
 .hobbies {
   width: 48%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .download-box {
@@ -484,4 +484,9 @@ button:hover {
 
 p {
   margin-bottom: 0;
+}
+
+#etext {
+  line-height: 5px;
+  padding-left: 30px;
 }
