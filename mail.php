@@ -4,7 +4,7 @@
     $email = $_POST["email"];
     $message = $_POST["message"];
     
-    $to = "youremail@example.com"; // Replace with your email address
+    $to = "emre.ertugg1@gmail.com";
     $subject = "New message from $name";
     $body = "Name: $name\nEmail: $email\nMessage: $message";
     
