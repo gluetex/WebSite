@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "POST",
-      url: "send-mail.php",
+      url: "mail.php",
       data: formData,
       dataType: "json",
       encode: true,
