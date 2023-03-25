@@ -5,6 +5,7 @@
     <title>Emre Ertuğ</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
   <body>
     <a id="top"></a>
@@ -20,13 +21,13 @@
       </ul>
     </nav>
 
-    <div class="container" >
+    <div class="container" id="about">
       <div class="left-box">
-        <div class="photo-box" >
+        <div class="photo-box">
           <img src="icons/emre.jpg" alt="Emre Ertuğ" />
         </div>
-        <div class="work-history-box" >
-          <h1 >Work History</h1>
+        <div class="work-history-box">
+          <h1><i class="fas fa-briefcase"></i> Work History</h1>
           <hr />
         </div>
       </div>
@@ -40,31 +41,86 @@
       </div>
       <div class="left-box">
         <div class="work-history-box">
-          <h1>Education</h1>
+          <h1><i class="fas fa-graduation-cap"></i> Education</h1>
           <hr />
         </div>
         <div class="work-info-box">
-          <h4>Computer Engineering, Bachelor of Engineering <i id="year">2020-Present</i></h4>
+          <h4>
+            Computer Engineering, Bachelor of Engineering
+            <i id="year">2020-Present</i>
+          </h4>
           <h5><i> Atılım University, Ankara</i></h5>
         </div>
       </div>
       <div class="left-box">
         <div class="work-history-box">
-          <h1>Skills</h1>
+          <h1><i class="fas fa-laptop-code"></i> Skills</h1>
           <hr />
         </div>
-        <div class="work-info-box">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Necessitatibus dicta reprehenderit, animi voluptatibus explicabo
-            quod eum maiores tempora magni, asperiores illum obcaecati,
-            consequatur fugit sequi aliquam odit nulla provident nobis.
-          </p>
+        <div class="picture-row">
+          <figure>
+            <img src="icons/c++.png" alt="c++">
+            <figcaption><h2>C++</h2></figcaption>
+            <figcaption><h2>Advanced</h2></figcaption>
+          </figure>
+          <figure>
+            <img src="icons/c.png" alt="c">
+            <figcaption><h2>C</h2></figcaption>
+            <figcaption><h2>Advanced</h2></figcaption>
+          </figure>
+          <figure>
+            <img src="icons/js.png" alt="js">
+            <figcaption><h2>JavaScript</h2></figcaption>
+            <figcaption><h2>Advanced</h2></figcaption>
+          </figure>
+          <figure>
+            <img src="icons/python.png" alt="python">
+            <figcaption><h2>Python</h2></figcaption>
+            <figcaption><h2>Intermediate</h2></figcaption>
+          </figure>
+          <figure>
+            <img src="icons/html.png" alt="html">
+            <figcaption><h2>HTML</h2></figcaption>
+            <figcaption><h2>Advanced</h2></figcaption>
+          </figure>
+          <figure>
+            <img src="icons/css.png" alt="css">
+            <figcaption><h2>CSS</h2></figcaption>
+            <figcaption><h2>Advanced</h2></figcaption>
+        </div>
       </div>
+      <div class="languages-hobbies-row">
+        <div class="languages">
+          <h2 id="lang"><i class="fas fa-language"></i> Languages</h2>
+          <hr />
+          <ul id="ltext">
+            <li><h3>English</h3></li>
+            <li><h3>German</h3></li>
+          </ul>
+        </div>
+        <div class="hobbies">
+          <h2 id="hob"><i class="fas fa-palette"></i> Hobbies & Interests</h2>
+          <hr />
+          <ul id="htext">
+            <li><h3><i class="fas fa-code"></i> Programming</h3></li>
+            <li><h3><i class="fas fa-camera"></i> Photography</h3></li>
+            <li><h3><i class="fas fa-book"></i> Reading</h3></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="download-box">
+        <h2>Download Resume <i class="fas fa-download"></i></h2>
+        <a href="resume/EmreErtugCV.pdf" download>
+          <button>Download</button>
+        </a>
+      </div>
+
+
       <div class="contact-box" id="contact">
         <h2 class="ctext"><i>Contact Me</i></h2>
         <form action="send-mail.php" method="post">
-          <label  for="name">Name Surname</label>
+          <label for="name">Name Surname</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Mail Address</label>
           <input type="email" id="email" name="email" required />

@@ -39,7 +39,6 @@ nav .logo a {
 nav .menu {
   display: flex;
   align-items: center;
-  
 }
 
 nav .menu li {
@@ -343,5 +342,146 @@ footer {
 }
 
 #year {
- margin-left: 64px;
+  margin-left: 64px;
+}
+.picture-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+
+.picture-row figure {
+  width: 8%;
+  text-align: center;
+}
+
+.picture-row img {
+  width: 100%;
+  height: auto;
+}
+
+.picture-row figcaption {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.languages-hobbies-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.languages-hobbies-row h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.languages-hobbies-row ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.languages {
+  width: 48%;
+  margin-top: 40px;
+  line-height: 50px;
+}
+
+.hobbies {
+  width: 48%;
+  margin-top: 90px;
+  line-height: 50px;
+}
+
+#ltext {
+  margin-top: 0px;
+  padding: 5px;
+  line-height: 50px;
+  align-items: center;
+  margin-left: 42%;
+}
+#htext {
+  margin-top: 0px;
+  padding: 5px;
+  line-height: 50px;
+  margin-left: 37%;
+}
+
+#lang {
+  margin-left: 38%;
+}
+
+#hob {
+  margin-left: 30%;
+}
+
+.languages-hobbies-row h2 {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+}
+
+.languages-hobbies-row h2 .icon {
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.languages-hobbies-row ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.languages {
+  width: 48%;
+  margin: 0 auto;
+}
+
+.hobbies {
+  width: 48%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.download-box {
+  background-color: antiquewhite;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+button {
+  background-color: #337ab7;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #23527c;
+}
+
+p {
+  margin-bottom: 0;
 }
