@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Emre Ertuğ</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
   <body>
@@ -121,18 +121,17 @@
 
       <div class="contact-box" id="contact">
         <h2 class="ctext"><i>Contact Me</i></h2>
-        <form action="send-mail.php" method="post">
+        <form class="contact-form" method="post">
           <label for="name">Name Surname</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Mail Address</label>
           <input type="email" id="email" name="email" required />
           <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
-          <input type="submit" value="Send" />
+          <button class="submit" type="submit">Send</button>
         </form>
       </div>
     </div>
-
     <footer id="myFooter">
       <div class="footer-box">
         <a href="https://www.linkedin.com/in/emreertug" target="_blank"
@@ -144,5 +143,13 @@
         <a href="mailto:emre.ertugg1@gmail.com"><img src="icons/mail.png" alt="Email"></a>
       </div>
     </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("QeWg7aFa_OcgXMiKU");
+   })();
+</script>
   </body>
 </html>

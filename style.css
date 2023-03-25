@@ -217,15 +217,15 @@ nav .menu li a:hover {
   border: none;
 }
 
-.contact-box button {
-  background-color: antiquewhite;
+/* .contact-box button {
+  background-color: #fffff0;
   color: antiquewhite;
   border: none;
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
   float: right;
-}
+} */
 
 .profile-img {
   width: 200px;

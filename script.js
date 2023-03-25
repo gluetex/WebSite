@@ -1,40 +1,36 @@
-$(document).ready(function () {
-  $("form").submit(function (event) {
-    event.preventDefault();
+const contactForm = document.querySelector(".contact-form");
+const submitBtn = document.querySelector(".submit");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const messageInput = document.querySelector("#message");
+const publicKey = "QeWg7aFa_OcgXMiKU";
+const serviceID = "service_sb0s0uo";
+const templateID = "template_3vmzblq";
 
-    var formData = {
-      name: $("input[name=name]").val(),
-      email: $("input[name=email]").val(),
-      message: $("textarea[name=message]").val(),
-    };
-
-    $.ajax({
-      type: "POST",
-      url: "mail.php",
-      data: formData,
-      dataType: "json",
-      encode: true,
-    })
-      .done(function (data) {
-        if (data.success) {
-          alert("Your message has been sent. Thank you!");
-          $("form")[0].reset();
-        } else {
-          alert(
-            "An error occurred while sending your message. Please try again later."
-          );
-        }
-      })
-      .fail(function () {
-        alert(
-          "An error occurred while sending your message. Please try again later."
-        );
-      });
-  });
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  submitBtn.innerText = "Just a moment...";
+  const inputFields = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+  emailjs.send(serviceID, templateID, inputFields).then(
+    () => {
+      submitBtn.innerText = "Message Sent Successfully";
+      nameInput.value = "";
+      emailInput.value = "";
+      messageInput.value = "";
+      setTimeout(() => {
+        submitBtn.innerText = "Send";
+      }, [3000]);
+    },
+    (error) => {
+      console.log(error);
+      submitBtn.innerText = "Something went wrong";
+    }
+  );
 });
-
-const menuLinks = document.querySelectorAll(".menu a");
-
 menuLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
