@@ -503,7 +503,7 @@ footer {
 .download-box {
   background-color: antiquewhite;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px;
   margin: 20px;
   max-width: 600px;
