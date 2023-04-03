@@ -222,9 +222,6 @@ nav .menu a {
   text-align: center;
   background-color: #f2f2f2;
 }
-.contact-box {
-  z-index: 2;
-}
 .contact-box input,
 .contact-box textarea {
   display: block;
@@ -277,6 +274,8 @@ nav .menu a {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  z-index: 0;
 }
 .contact-form {
   width: 100%;
