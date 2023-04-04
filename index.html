@@ -16,121 +16,161 @@
   <body>
     <a id="top"></a>
     <nav>
-      <div class="logo">
-        <a href="#top">
-          <img id="logoPh" src="icons/logo.jpeg" alt="Emre Ertuğ" />
-        </a>
+      <div class="navbar-logo">
+        <a href="#"><img id="logoPh" src="icons/logo.jpeg" alt="Emre Ertuğ" /></a>
       </div>
-      <div class="menu">
-          <a class="menuAbout" href="#about">About Me</a>
-          <a class="menuContact" href="#contact">Contact</a>
+      <ul class="navbar-menu">
+        <li><a class="menuAbout" href="#about">About</a></li>
+        <li><a class="menuContact" href="#contact">Contact</a></li>
+      </ul>
+      <div class="navbar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      
     </nav>
 
+
+
     <div class="container" id="about">
-      <div class="left-box">
-        <div class="photo-box">
-          <img src="icons/emre.jpg" alt="Emre Ertuğ" />
-        </div>
-        <div class="work-history-box">
-          <h1 id="gtext"><i class="fas fa-briefcase"></i> Work History</h1>
-          <hr />
-        </div>
-      </div>
-      <div class="work-info-box">
-        <h2>Patika Robotics - Intern</h2>
-        <h3>2022 - August</h3>
-        <p>&rarr; Developed a website using NodeJS and ExpressJS.</p>
-        <p>
-          &rarr; Wrote modules to record and assign an unmanned robot's duties
-        </p>
-      </div>
-      <div class="left-box">
-        <div class="work-history-box">
-          <h1 id="gtext"><i class="fas fa-graduation-cap"></i> Education</h1>
-          <hr />
-        </div>
-        <div class="work-info-box">
-          <h3>
-            Computer Engineering, Bachelor of Engineering
-            <i id="year">2020-Present</i>
-          </h3>
-          <h4><i> Atılım University, Ankara</i></h4>
-        </div>
-      </div>
-      <div class="left-box">
-        <div class="work-history-box">
-          <h1 id="gtext"><i class="fas fa-laptop-code"></i> Skills</h1>
-          <hr />
-        </div>
-        <div class="picture-row">
-          <figure>
-            <img src="icons/c++.png" alt="c++">
-            <figcaption><h2>C++</h2></figcaption>
-          </figure>
-          <figure>
-            <img src="icons/c.png" alt="c">
-            <figcaption><h2>C</h2></figcaption>
-          </figure>
-          <figure>
-            <img src="icons/js.png" alt="js">
-            <figcaption><h2>JavaScript</h2></figcaption>
-          </figure>
-          <figure>
-            <img src="icons/python.png" alt="python">
-            <figcaption><h2>Python</h2></figcaption>
-          </figure>
-          <figure>
-            <img src="icons/html.png" alt="html">
-            <figcaption><h2>HTML</h2></figcaption>
-          </figure>
-          <figure>
-            <img src="icons/css.png" alt="css">
-            <figcaption><h2>CSS</h2></figcaption>
-        </div>
-      </div>
-      <div class="languages-hobbies-row">
-        <div class="languages">
-          <h2 id="lang"><i class="fas fa-language"></i> Languages</h2>
-          <hr />
-          <ul id="ltext">
-            <li><h3>English</h3></li>
-            <li id="etext"><h4>Upper Intermediate</h4></li>
-            <li><h3>German</h3></li>
-            <li id="etext"><h4>Beginner</h4></li>
-          </ul>
-        </div>
-        <div class="hobbies">
-          <h2 id="hob"><i class="fas fa-palette"></i> Hobbies & Interests</h2>
-          <hr />
-          <ul id="htext">
-            <li><h3><i class="fas fa-code"></i> Programming</h3></li>
-            <li><h3><i class="fas fa-camera"></i> Photography</h3></li>
-            <li><h3><i class="fas fa-book"></i> Reading</h3></li>
-          </ul>
-        </div>
+      <div class="info-container">
+        
+          <div>
+            <div class="photo-box">
+              <img src="icons/emre.jpg" alt="Emre Ertuğ" />
+            </div>
+          </div>
+          <div class="info-container-right">
+            <div>
+              <div>
+                <h1 id="gtext"><i class="fas fa-briefcase"></i> Work History</h1>
+                <hr />
+              </div>
+              
+                      <div class="work-history-class">
+              <h2>Patika Robotics - Intern</h2>
+              <h3>2022 - August</h3>
+              <p>&rarr; Developed a website using NodeJS and ExpressJS.</p>
+              <p>
+                &rarr; Wrote modules to record and assign an unmanned robot's duties
+              </p>
+                      </div>
+            </div>
+
+            <div>
+              <div>
+                <h1 id="gtext"><i class="fas fa-graduation-cap"></i> Education</h1>
+                <hr />
+              </div>
+              <div>
+                <div class="education-text">
+                  <h3>
+                    Computer Engineering, Bachelor of Engineering
+                    <h3><i id="year">2020-Present</i></h3>
+                  </h3>
+                </div>
+                <h4><i> Atılım University, Ankara</i></h4>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h1 id="gtext"><i class="fas fa-laptop-code"></i> Skills</h1>
+                <hr />
+              </div>
+              <div class="skill-box">
+                  <figure>
+                    <img src="icons/c++.png" alt="c++">
+                    <figcaption><h2>C++</h2></figcaption>
+                  </figure>
+                  <figure>
+                    <img src="icons/c.png" alt="c">
+                    <figcaption><h2>C</h2></figcaption>
+                  </figure>
+                  <figure>
+                    <img src="icons/js.png" alt="js">
+                    <figcaption><h2>JavaScript</h2></figcaption>
+                  </figure>
+                  <figure>
+                    <img src="icons/python.png" alt="python">
+                    <figcaption><h2>Python</h2></figcaption>
+                  </figure>
+                  <figure>
+                    <img src="icons/html.png" alt="html">
+                    <figcaption><h2>HTML</h2></figcaption>
+                  </figure>
+                  <figure>
+                    <img src="icons/css.png" alt="css">
+                    <figcaption><h2>CSS</h2></figcaption>
+              </div>
+            </div>
+
+            <div class="lang-hob">
+              <div class="lang">
+                <div class="titler">
+                  <h2><i class="fas fa-language"></i> Languages</h2>
+                    
+                </div>
+                <hr />
+                <div class="lang-class-gen">
+                  <ul class="listClass">
+                    <li><h3>English</h3></li>
+                    <li class="shift"><h4>Upper Intermediate</h4></li>
+                    <li><h3>German</h3></li>
+                    <li class="shift"><h4>Beginner</h4></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hob">
+                <div class="titler">
+                  <h2><i class="fas fa-palette"></i> Hobbies & Interests</h2>
+                  
+                </div>
+                <hr />
+                <div class="hob-style">
+                  <ul class="hob-class">
+                    <li><h3><i class="fas fa-code hobIcon "></i> Programming</h3></li>
+                    <li><h3><i class="fas fa-camera hobIcon"></i> Photography</h3></li>
+                    <li><h3><i class="fas fa-book hobIcon"></i> Reading</h3></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="download-box">
+              <div class="download-box-content">
+                
+                <a href="resume/EmreErtugCV.pdf" download>
+                  <button class="download-btn"><h2>Download Resume <i class="fas fa-download"></i></h2></button>
+                </a>
+              </div>
+            </div>
+  
+          </div>
+
+          
+
       </div>
 
-      <div class="download-box">
-        <h2>Download Resume <i class="fas fa-download"></i></h2>
-        <a href="resume/EmreErtugCV.pdf" download>
-          <button>Download</button>
-        </a>
-      </div>
+      
 
 
-      <div class="contact-box" id="contact">
-        <h2 class="ctext"><i>Contact Me</i></h2>
-        <form class="contact-form" method="post">
-          <label for="name">Name Surname</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Mail Address</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-          <button class="submit" type="submit">Send</button>
-        </form>
+      <div class="contact-class">
+   
+
+          <div class="contact-box" id="contact">
+            <h2 class="ctext"><i>Contact Me</i></h2>
+            <form class="contact-form" method="post">
+              <label for="name">Name Surname</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Mail Address</label>
+              <input type="email" id="email" name="email" required />
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+              <button class="submit" type="submit">Send</button>
+            </form>
+          </div>
+          
+
       </div>
     </div>
     <footer id="myFooter">

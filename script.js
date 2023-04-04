@@ -31,11 +31,11 @@ contactForm.addEventListener("submit", (e) => {
     }
   );
 });
-menuLinks.forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = this.getAttribute("href");
-    const page = href.substr(1);
-    history.pushState({ page }, null, `/${page}`);
-  });
+
+const navbarToggle = document.querySelector(".navbar-toggle");
+const navbarMenu = document.querySelector(".navbar-menu");
+
+navbarToggle.addEventListener("click", () => {
+  navbarToggle.classList.toggle("active");
+  navbarMenu.classList.toggle("active");
 });
