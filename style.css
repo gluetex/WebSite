@@ -59,8 +59,8 @@ body {
 }
 
 .photo-box img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 30px;
