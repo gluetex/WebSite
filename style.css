@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 3;
-  font-size: 20px;
+  font-size: 15px;
   padding: 20px;
   background-color: antiquewhite;
   border-radius: 20px;
@@ -61,8 +61,8 @@ body {
 }
 
 .photo-box img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 30px;
@@ -85,15 +85,10 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  .skill-box img {
-    width: 60%;
-    height: auto;
-  }
 }
 
 .info-container-right h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .education-text {
@@ -115,13 +110,13 @@ body {
 }
 
 .work-history-box h1 {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
   padding: 0 6rem;
 }
 
 .work-history-box p {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 2;
 }
 
@@ -133,7 +128,7 @@ body {
 }
 
 .right-box h2 {
-  font-size: 24px;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 
@@ -435,7 +430,7 @@ footer {
   }
 
   .lang h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .lang h4 {
@@ -475,10 +470,10 @@ footer {
 }
 .lang-class-gen h3 {
   margin-top: 15px;
-  font-size: 27px;
+  font-size: 25px;
 }
 .lang-class-gen h4 {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .listClass {
@@ -700,7 +695,7 @@ nav {
 .navbar-menu .menuAbout {
   border-radius: 15px;
   color: black;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 440px) {
@@ -713,7 +708,7 @@ nav {
   border-radius: 15px;
   color: black;
   padding: 1rem;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .navbar-menu .menuContact:hover {
